@@ -81,7 +81,7 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
   <li>CNC zudecken mit grünem Tuch</li>
   <li>Zubehör zurück in den ToolsLocker</li>
 </ol>  
-  [Referenzfahrt](doc/Estlcam_Referenz.jpg)
+  [Referenzfahrt](#doc/Estlcam_Referenz.jpg)
   
 ----
   
