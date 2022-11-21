@@ -80,8 +80,9 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
   <li>Steckdosenleiste ausschalten</li>
   <li>CNC zudecken mit grünem Tuch</li>
   <li>Zubehör zurück in den ToolsLocker</li>
-</ol>  
-  [Referenzfahrt](#doc/Estlcam_Referenz.jpg)
+</ol>
+
+* [Referenzfahrt ausführen](doc/Estlcam_Referenz.jpg)
   
 ----
   
