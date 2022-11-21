@@ -72,7 +72,8 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
   
 ## Fräse runter fahren (ausschalten)
 <ol>
-  <li>[Referenzfahrt ausführen](doc/Estlcam_Referenz.jpg) - es wird der Maschinennullpunkt ermittelt [Grundposition der Fräse]</li>
+  <li>Referenzfahrt ausführen - es wird der Maschinennullpunkt ermittelt [Grundposition der Fräse]</li>
+      [Referenzfahrt](doc/Estlcam_Referenz.jpg)
   <li>Programm Estlcam CNC-Steuerung schließen</li>  
   <li>PC herunterfahren</li>
   <li>Computer-Maus ausschalten</li>
