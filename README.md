@@ -119,7 +119,7 @@ Jedes Feld und jede Funktion wird ausführlich erklärt, wenn man den Mauszeiger
 
 <img src="https://user-images.githubusercontent.com/42470750/203062942-5aad268b-3a6c-4efd-95e9-3add23fc373e.jpg" width="400" border = "0" alt="Box_16">
 
-Sollten die Kreis am unteren rechten Rand des Fensters erscheinen, wurde das einloggen vergessen. (Die Steuerung ist aus!!!)
+Sollten die roten Kreise am unteren rechten Rand des Fensters erscheinen, wurde das einloggen vergessen. (Die Steuerung ist aus!!!)
 
 ### Funktionserklärungen ###
 [Achspositionen](/doc/Estlcam_Achsen_Pos.jpg)<br>
@@ -137,7 +137,15 @@ Auf dem USB-Stick befindet sich die zu verarbeitende CNC-File. Wurde das Objekt 
 
 # Fräsmotor mit Fernsteuerung bewegen und Fräser montieren #
 
-__Achtung: Nicht vergessen die große ENTER-Taste (rechts/unten) der Fernsteuerung zu drücken! Sie baut dann die Verbindung mit dem Mini-Computer auf.__![REMOTE](https://user-images.githubusercontent.com/42463588/128599642-06dfa2aa-7fdc-4fdb-a3ca-056b4d05d5d5.jpg)
+
+<img src="https://user-images.githubusercontent.com/42470750/203064244-56e8c240-c14f-400e-87f5-74218547eb0c.jpg" width="400" border = "0" alt="Box_17">
+
+__Achtung: Nicht vergessen die große ENTER-Taste (rechts/unten) der Fernsteuerung zu drücken! Sie baut dann die Verbindung mit dem Mini-Computer auf.__
+
+
+<img src="https://user-images.githubusercontent.com/42470750/203064278-7623f243-93f4-43d8-97d8-dd209a1b41d5.jpg" width="400" border = "0" alt="Box_18">
+
+__Achtung: Sollte die Fräse nicht mit der Tastatur bewegen lassen, bitte die NUM-Taste drücken (Pfeile werden aktivert).__
 
 
 # Werkstück einspannen #
