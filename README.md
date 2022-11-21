@@ -95,7 +95,7 @@ Hinter der Fräse befindet sich eine Steckdosenleiste mit Schalter - mit diesem 
 <br><br>
 Der PC bootet mit dem Einschalten automatisch. Sollte das nicht funktionieren, bitte Taster (Start) am PC drücken.<br><br>
   
-<img src=["https://user-images.githubusercontent.com/42470750/203057014-ed81df26-1f1b-4b00-a4e1-51b00c1899ca.jpg"]>
+<img src=https://user-images.githubusercontent.com/42470750/203059431-db8376b1-765b-42ac-a8a4-8cc3a065d66d.jpg>
 
   
 # Freigabe mit RFID Chip
