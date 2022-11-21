@@ -38,7 +38,6 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
    * [Einloggen](#Freigabe-mit-RFID-Chip)
 * Programm CNC Controller V11 starten
    * [Programm starten](#Estlcams-CNC-Controller-V11-starten)
-* [Referenzfahrt ausführen](doc/Estlcam_Referenz.jpg) - es wird der Maschinennullpunkt ermittelt [Fraese sollte an Referenzpunkt stehen]
 * Fräser montieren  
   * Fräsmotor mittels Fernsteuerung, Maus oder Direkteingabe an eine geeignete Position fahren
   * passende Spannzange und Überwurfmutter aus der Zubehörbox entnehmen und in den Spindelmotor einsetzen (leicht andrehen) [Spannzangen](#Spannzangen)
@@ -58,13 +57,14 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
     * Alle Achsen NULLEN - z.B. mit mittlerer Maus-Taste oder in der Estlcam Kommandozeile mit Befehl 'Null' 
 * Z-Nullpunkt automatisch mit Sensor ermitteln
 
-  ###  !!! vor dem Benutzen des Sensors testen, ob er funktioniert !!!: ###
-  Testplatte an den Fräser (Gewind, Überwurfmutter) halten, wenn der Sensor auslöst (... F11 blinkt) mit F11 bestätigen, alles ok.
-  ### wenn der Sensor nicht auslöst (... F11 nicht sichtbar) ist es nur manuell möglich den Nullpunkt einzustellen!!! ###
+  * Sensortest
+
+    ###  !!! vor dem Benutzen des Sensors testen, ob er funktioniert !!!: ###
+    Testplatte an den Fräser (Gewind, Überwurfmutter) halten, wenn der Sensor auslöst (... F11 blinkt) mit F11 bestätigen, alles ok.
+    
+    ### wenn der Sensor nicht auslöst (... F11 nicht sichtbar) ist es nur manuell möglich den Nullpunkt einzustellen!!! ###
 
   <img src="https://user-images.githubusercontent.com/42463588/128348039-859f8c6a-bd0f-4af7-ab58-33d2fa53a9ae.jpg" width="300" border = "0" alt="Sensor">
-
-* Sensortest
 
 * Absauge einschalten
 * Fräsvorgang starten
@@ -72,7 +72,7 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
   
 ## Fräse runter fahren (ausschalten)
 <ol>
-  <li>Per 'Referenzfahrt' den Fräsmotor nach links/oben bringen</li>
+  <li>[Referenzfahrt ausführen](doc/Estlcam_Referenz.jpg) - es wird der Maschinennullpunkt ermittelt [Grundposition der Fräse]</li>
   <li>Programm Estlcam CNC-Steuerung schließen</li>  
   <li>PC herunterfahren</li>
   <li>Computer-Maus ausschalten</li>
@@ -86,6 +86,8 @@ Wenn dies passiert ist - bitte einfach die Ruhe bewahren! Die Software hat sofor
 ----
   
 # Einschalten
+__Tastatur, Fernbedienung und Computer-Maus (eingeschaltet) auf Brett bereit legen.__
+
 Hinter der Fräse befindet sich eine Steckdosenleiste mit Schalter - mit diesem Schalter einschalten:
 
 <img width="400" alt="Box_3" src="https://user-images.githubusercontent.com/42463588/127311146-514fe918-c521-48f9-8353-5dd8aeab8ffb.jpg">
@@ -94,12 +96,7 @@ Der Kleincomputer hat seitlich links einen Ein/Aus-Taster (blaue Kennzeichnung) 
 <br><br>
   
 <img src="https://user-images.githubusercontent.com/42470750/127994776-5172ce66-92b8-4142-9e16-ca7e70df221d.jpg">
-  
-__Tastatur, Fernbedienung und Computer-Maus (eingeschaltet) auf Brett bereit legen.__
-  
-__Achtung: Nicht vergessen die große ENTER-Taste (rechts/unten) der Fernsteuerung zu drücken! Sie baut dann die Verbindung mit dem Mini-Computer auf.__
-  
-![REMOTE](https://user-images.githubusercontent.com/42463588/128599642-06dfa2aa-7fdc-4fdb-a3ca-056b4d05d5d5.jpg)
+
   
 # Freigabe mit RFID Chip
 Die Nutzung der CNC-Fräse ist nur nach Einweisung und Freischaltung des Mitglieds möglich.
@@ -134,7 +131,7 @@ Auf dem USB-Stick befindet sich die zu verarbeitende CNC-File. Wurde das Objekt 
 
 # Fräsmotor mit Fernsteuerung bewegen und Fräser montieren #
 
-![REMOTE](https://user-images.githubusercontent.com/42463588/128599642-06dfa2aa-7fdc-4fdb-a3ca-056b4d05d5d5.jpg)
+__Achtung: Nicht vergessen die große ENTER-Taste (rechts/unten) der Fernsteuerung zu drücken! Sie baut dann die Verbindung mit dem Mini-Computer auf.__![REMOTE](https://user-images.githubusercontent.com/42463588/128599642-06dfa2aa-7fdc-4fdb-a3ca-056b4d05d5d5.jpg)
 
 
 # Werkstück einspannen #
