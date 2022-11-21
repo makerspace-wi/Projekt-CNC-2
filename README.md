@@ -93,10 +93,11 @@ Hinter der Fräse befindet sich eine Steckdosenleiste mit Schalter - mit diesem 
 
 <img width="400" alt="Box_3" src="https://user-images.githubusercontent.com/42463588/127311146-514fe918-c521-48f9-8353-5dd8aeab8ffb.jpg">
 <br><br>
-Der PC bootet mit dem Einschalten automatisch. Sollte das nicht funktionieren, bitte Taster (Start) am PC drücken.<br><br>
+Der PC bootet mit dem Einschalten automatisch.
+Sollte das nicht funktionieren, bitte Taster (Start) am PC drücken.
   
 <img width="400" alt="Box_2"  src=https://user-images.githubusercontent.com/42470750/203059431-db8376b1-765b-42ac-a8a4-8cc3a065d66d.jpg>
-
+<br><br>
   
 # Freigabe mit RFID Chip
 Die Nutzung der CNC-Fräse ist nur nach Einweisung und Freischaltung des Mitglieds möglich.
@@ -115,6 +116,11 @@ Dort dann das Programm &nbsp;<i>CNC Controller V11</i> &nbsp; mit Doppelklick st
 
 Die X-, Y- und Z-Position des Fräsmotors kann per Fernsteuerung, als auch per Mausklick auf die blauen Richtungspfeile gesteuert werden.<br>
 Jedes Feld und jede Funktion wird ausführlich erklärt, wenn man den Mauszeiger darüber positioniert.
+
+<img src="https://user-images.githubusercontent.com/42470750/203062942-5aad268b-3a6c-4efd-95e9-3add23fc373e.jpg" width="400" border = "0" alt="Box_16">
+
+Sollten die Kreis am unteren rechten Rand des Fensters erscheinen, wurde das einloggen vergessen. (Die Steuerung ist aus!!!)
+
 ### Funktionserklärungen ###
 [Achspositionen](/doc/Estlcam_Achsen_Pos.jpg)<br>
 [Kommandozeile nutzen](doc/Estlcam_Kommandozeile.jpg)<br>
