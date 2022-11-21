@@ -93,10 +93,9 @@ Hinter der Fräse befindet sich eine Steckdosenleiste mit Schalter - mit diesem 
 
 <img width="400" alt="Box_3" src="https://user-images.githubusercontent.com/42463588/127311146-514fe918-c521-48f9-8353-5dd8aeab8ffb.jpg">
 <br><br>
-Der Kleincomputer hat seitlich links einen Ein/Aus-Taster (blaue Kennzeichnung) - diesen für 1 sec drücken, bis die rote LED dauerhaft brennt (Wenn nötig wiederholen bis rote LED dauerhaft brennt), der Computer bootet dann (Intel erscheint nach einigen sec auf dem Bildschirm). 
-<br><br>
+Der PC bootet mit dem Einschalten automatisch. Sollte das nicht funktionieren, bitte Taster (Start) am PC drücken.<br><br>
   
-<img src="https://user-images.githubusercontent.com/42470750/127994776-5172ce66-92b8-4142-9e16-ca7e70df221d.jpg">
+<img src=["https://user-images.githubusercontent.com/42470750/203057014-ed81df26-1f1b-4b00-a4e1-51b00c1899ca.jpg"]>
 
   
 # Freigabe mit RFID Chip
