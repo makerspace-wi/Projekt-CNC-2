@@ -121,12 +121,6 @@ Jedes Feld und jede Funktion wird ausführlich erklärt, wenn man den Mauszeiger
 
 Sollten die roten Kreise am unteren rechten Rand des Fensters erscheinen, wurde das einloggen vergessen. (Die Steuerung ist aus!!!)
 
-### Funktionserklärungen ###
-[Achspositionen](/doc/Estlcam_Achsen_Pos.jpg)<br>
-[Kommandozeile nutzen](doc/Estlcam_Kommandozeile.jpg)<br>
-[CNC-File öffnen](doc/Estlcam_CNC_Code.jpg)<br>
-[Werkzeuglängenmessung](doc/Estlcam_Laengenmessung.jpg)<br>
-[Referenzfahrt](doc/Estlcam_Referenz.jpg)<br>
 
 Nach laden der CNC-File: [G-Code & Werkstückdarstellung](doc/Estlcam_Codeanzeige.jpg)
 
