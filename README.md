@@ -11,6 +11,7 @@ Die CNC2-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die B
 - Der erste Teil besteht aus Vorführung der Fräse mit Erklärung über das vorhandene Projekt.
 - Beim zweiten Teile fräst der Benutzer sein eigenes Projekt und wird dabei von dem Einweiser unterstützt.
 
+# [Zum CNC-2 Holzfräse Wiki](https://github.com/makerspace-wi/Projekt-CNC2-Holzfraese/wiki)
 ### [ToolsLocker](https://github.com/makerspace-wi/ToolsLocker/wiki)
 Im ToolsLocker Fach "CNC-Zubehör" (Freischaltung erforderlich) befindet sich ein Zubehörbehälter für die CNC2, bestehend aus: Computer Maus, Tastatur, Fernsteuerung, Werkzeughöhensensor, 2 Schraubenschlüssel 15er & 17er (Werkzeugwechsel) und einem 44teiliges Sorotec Stufenspannpratzenset M6 für 6er Nut ([Spann Pratzen Set Teileliste](doc/Pratzen_Set.pdf)), Pinsel,  4 x Überwurfmutter, Spannzangenset (1 x 3mm, 1 x 3,175mm, 2 x 4mm, 1 x 5mm, 2 x 6mm, 1 x 8mm) und Anleitung für den Spänesauger<p>
 Bitte immer sicherstellen, dass nach der Arbeit alles - komplett - zurückgestellt wird.
