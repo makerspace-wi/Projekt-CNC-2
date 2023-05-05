@@ -5,7 +5,8 @@
 # Vorworte
 Es handelt sich dabei um eine <b>CNC-Sperrholz-Fräse</b> aus dem Make(CT Hacks) Magazin 1/2014 
 und der Weiterentwicklung nach CNC14 (cnc14.de), mit einer Arbeitsfläche von 600mm x 1200mm, 
-davon einer Fräsefläche von 550mm x 900mm und einer Verfahrhöhe von 70mm
+davon einer Fräsefläche von 550mm x 900mm und einer Verfahrhöhe von 70mm<br>
+Gesteuert wird die Fräse mit dem Programm Estlcam von Christian Knüll
 ### Einweisungen
 Die CNC2-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die Bedienung ist am Anfang sehr komplex, daher sollte unbedingt ein Projekt vorhanden sein und die Einweisung erfolgt daher auch in zwei Teilen.
 - Der erste Teil besteht aus Vorführung der Fräse mit Erklärung über das vorhandene Projekt.
