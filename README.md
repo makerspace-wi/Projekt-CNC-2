@@ -9,10 +9,10 @@ und der Weiterentwicklung nach CNC14 (cnc14.de).
 Arbeitsfläche:
 * X-Achse 600mm
 * Y-Achse 1200mm<br>
+
 Fräsfläche:
 * X-Achse 550mm
 * Y-Achse 950mm
-
 * Z-Hub 70mm
 * AMB/Kress 1050W<br>
 
