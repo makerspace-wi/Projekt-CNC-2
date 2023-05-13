@@ -8,7 +8,7 @@ und der Weiterentwicklung nach CNC14 (cnc14.de).
 
 Arbeitsfläche:
 * X-Achse 600mm
-* Y-Achse 1200mm
+* Y-Achse 1200mm<br>
 Fräsfläche:
 * X-Achse 550mm
 * Y-Achse 950mm
