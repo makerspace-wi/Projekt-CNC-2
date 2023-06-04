@@ -1,4 +1,4 @@
-﻿Version=11241
+﻿Version=11245
 Setting type=CNC controller settings
 
 ;----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -9,7 +9,7 @@ Setting type=CNC controller settings
 Enabled=yes
 Hardware=G_PWM
 Firmware=G_PWM
-Last Upload=11240
+Last Upload=11242
 Port=COM4
 
 ;Axis configuration
@@ -33,7 +33,7 @@ Current Y=0,5
 Current Z=0,5
 
 Acceleration distance=2
-Min feedrate=2
+Min feedrate=1
 Fast Diagonal=no
 Invert enable output=no
 Invert step signal=no
@@ -46,20 +46,20 @@ Manual programming reset=no
 
 Position X=0
 Position Y=0
-Position Z=2667
-Home offset X=41351
-Home offset Y=108621
-Home offset Z=38861
-Feedrate=83,333335876464844
-RPM=22000
-Last CNC file=D:\44_Workspace\21_Fraesen\CNCAnschlägeN.nc
-Last CNC line=0
+Position Z=0
+Home offset X=37200
+Home offset Y=75600
+Home offset Z=37333
+Feedrate=11
+RPM=25000
+Last CNC file=D:\44_workspace\25_DIY_Parts\21_Fraesen\Test_Karen\5. EicheDunkelFraesen.nc
+Last CNC line=6163
 Last CNC rotation=0
 Balance message=yes
 
 ;Spindle configuration
-RPM min=8000
-RPM max=24000
+RPM min=5000
+RPM max=25000
 RPM delay=1
 PWM min=0
 PWM max=100
@@ -148,8 +148,8 @@ Input 16 inverted=no
 Input 16 pull-up=yes
 
 ;Outputs
-Output 1 name=Absaugung
-Output 1 picture=img_vac
+Output 1 name=Extra
+Output 1 picture=img_light
 
 Output 2 name=Output 2
 Output 2 picture=img_mist
@@ -181,7 +181,7 @@ Homing speed=40
 Homing probe speed=1
 Homing switch precise=no
 Homing back up distance=5
-Check step losses=yes
+Check step losses=no
 Zero after homing=yes
 Travel limits enabled=no
 Travel limit X=465
@@ -198,7 +198,7 @@ Parking position Z=0
 Homing Safety Msg=yes
 
 ;Tool sensor
-Tool sensor probe speed=2
+Tool sensor probe speed=0,10000000000000001
 Tool sensor back up distance=5
 Tool sensor fixed position=no
 Tool sensor fixed position X=0
@@ -244,7 +244,7 @@ Key speed 3=75
 Key speed 4=100
 
 ;Gamepad
-Gamepad enabled=yes
+Gamepad enabled=no
 Gamepad low speed=2
 Gamepad high speed=100
 Gamepad exponent=0
