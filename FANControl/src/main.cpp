@@ -17,7 +17,7 @@
 #define TEMP_LOW 300         // lower limit of fan speed control range (1/10 degree Celsius)
 #define TEMP_HIGH 600        // upper limit of fan speed control range (1/10 degree Celsius)
 #define FAN_OFF 255          // PWM setting for "fan off"
-#define FAN_LOW 240          // PWM setting for "fan starting at minimal speed"
+#define FAN_LOW 225          // PWM setting for "fan starting at minimal speed"
 #define FAN_HIGH 0           // PWM setting for "fan at maximum speed"
 #define FAN_STARTUP_DELAY 30 // duration of the energy-pulse to start fan from standstill (msec)
 #define POWER_ON_DELAY 2     // runtime of the fan at power-on (sec)
@@ -183,11 +183,8 @@ int16_t read_temperatur(uint8_t pin) {
   return(temperature);                     // return temperature
 };
 
-void setup() {
-  // put your setup code here, to run once:
-}
-
-void loop() {
+/* main -------------------------------------------------------------------------------------------*/
+int main(void) {
   int16_t temp1, temp2, temp_max;
   uint8_t power_on = POWER_ON_DELAY;
 

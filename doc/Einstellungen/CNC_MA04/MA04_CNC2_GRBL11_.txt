@@ -9,8 +9,8 @@ Setting type=CNC controller settings
 Enabled=yes
 Hardware=G_PWM
 Firmware=G_PWM
-Last Upload=11242
-Port=COM4
+Last Upload=11244
+Port=COM5
 
 ;Axis configuration
 Steps rev X=1600
@@ -19,11 +19,11 @@ Steps rev Z=1600
 Distance rev X=20
 Distance rev Y=20
 Distance rev Z=3
-Fmax X=83,333335876464844
-Fmax Y=83,333335876464844
+Fmax X=50
+Fmax Y=50
 Fmax Z=25
-Inertia X=85
-Inertia Y=85
+Inertia X=80
+Inertia Y=80
 Inertia Z=85
 Inverted X=yes
 Inverted Y=no
@@ -32,8 +32,8 @@ Current X=0,5
 Current Y=0,5
 Current Z=0,5
 
-Acceleration distance=2
-Min feedrate=1
+Acceleration distance=2,5
+Min feedrate=0,91666666666666663
 Fast Diagonal=no
 Invert enable output=no
 Invert step signal=no
@@ -60,9 +60,9 @@ Balance message=yes
 ;Spindle configuration
 RPM min=5000
 RPM max=25000
-RPM delay=1
-PWM min=0
-PWM max=100
+RPM delay=0,5
+PWM min=10
+PWM max=90
 PWM Frequency=0
 Spindle output inverted=no
 
@@ -149,7 +149,7 @@ Input 16 pull-up=yes
 
 ;Outputs
 Output 1 name=Extra
-Output 1 picture=img_light
+Output 1 picture=img_vac
 
 Output 2 name=Output 2
 Output 2 picture=img_mist
@@ -181,7 +181,7 @@ Homing speed=40
 Homing probe speed=1
 Homing switch precise=no
 Homing back up distance=5
-Check step losses=no
+Check step losses=yes
 Zero after homing=yes
 Travel limits enabled=no
 Travel limit X=465
@@ -192,9 +192,9 @@ Park after homing=no
 Park after controller start=no
 Park after CNC program end=no
 Park after M00 M01=no
-Parking position X=0
-Parking position Y=0
-Parking position Z=0
+Parking position X=7,3875000000000002
+Parking position Y=186,8125
+Parking position Z=69,999375000000001
 Homing Safety Msg=yes
 
 ;Tool sensor
@@ -237,7 +237,7 @@ Key 16=111
 Key 17=106
 Key 18=8
 Key 19=110
-Key speed 0=10
+Key speed 0=5
 Key speed 1=25
 Key speed 2=50
 Key speed 3=75
