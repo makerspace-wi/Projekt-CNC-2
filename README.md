@@ -6,15 +6,22 @@
 Es handelt sich dabei um eine <b>CNC-Sperrholz-Fräse</b> aus dem Make(CT Hacks) Magazin 1/2014 
 und der Weiterentwicklung nach CNC14 (cnc14.de).
 
+#### Technische Daten:
+
+* X-Achse mit 1x Nema 23 190Nm & Riemen T2,5 & 2x mech. Endstopp (min & max)
+* Y-Achse mit 1x Nema 23 190Nm & Riemen T2,5 & 2x mech. Endstopp (min & max)
+* Z-Achse mit 1x Nema 23  90Nm & ????er TS & 2x mech. Endstopp (min & max)
+* AMB/Kress 1050W<br>
+
 Arbeitsfläche:
 * X-Achse 600mm
-* Y-Achse 1200mm<br>
+* Y-Achse 1200mm
+* Z-Achse ??mm (Durchlasshöhe ohne Fräser)
 
 Fräsfläche:
 * X-Achse 550mm
 * Y-Achse 950mm
 * Z-Hub 70mm
-* AMB/Kress 1050W<br>
 
 Gesteuert wird die Fräse mit dem Programm [Estlcam](https://www.estlcam.de/) von Christian Knüll
 
