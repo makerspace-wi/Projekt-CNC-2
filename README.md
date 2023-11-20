@@ -10,7 +10,7 @@ und der Weiterentwicklung nach CNC14 (cnc14.de).
 
 * X-Achse mit 1x Nema 23 190Nm & Riemen T2,5 & 2x mech. Endstopp (min & max)
 * Y-Achse mit 1x Nema 23 190Nm & Riemen T2,5 & 2x mech. Endstopp (min & max)
-* Z-Achse mit 1x Nema 23  90Nm &  ?? 16er TS & 2x mech. Endstopp (min & max)
+* Z-Achse mit 1x Nema 23  90Nm &     ??er TS & 2x mech. Endstopp (min & max)
 * AMB/Kress FME-1 1050 Fräs-Spindel
 
 Arbeitsfläche:
