@@ -30,5 +30,6 @@ Die CNC2-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die B
 - Der erste Teil besteht aus Vorführung der Fräse mit Erklärung über das vorhandene Projekt.
 - Beim zweiten Teil fräst der Benutzer sein eigenes Projekt und wird dabei von dem Einweiser unterstützt.
 
+### Erklärungen werden neben dem Mauszeiger angezeigt!!!<br>
 ### Details zur Bedienung, Einrichtung & Wartung können im Wiki nachgeschlagen werden.<br> !!! Bei Unsicherheiten in der Bedienung BITTE IMMER einen Einweiser kontaktieren !!!
 ### [Zum Wiki](https://github.com/makerspace-wi/Projekt-CNC2-Holzfraese/wiki)
