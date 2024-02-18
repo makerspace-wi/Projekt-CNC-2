@@ -23,7 +23,7 @@ Fräsfläche:
 * Y-Achse 950mm
 * Z-Hub 70mm
 
-Gesteuert wird die Fräse mit dem Programm [Estlcam](https://www.estlcam.de/) von Christian Knüll
+Gesteuert wird die Fräse mit dem Programm [Estlcam](https://www.estlcam.de/) von Christian Knüll (Homepage enthät auch weitere Hilfen)
 
 ### Einweisungen
 Die CNC2-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die Bedienung ist am Anfang sehr komplex, daher sollte unbedingt ein Projekt vorhanden sein und die Einweisung erfolgt daher auch in zwei Teilen.
