@@ -1,4 +1,4 @@
-﻿Version=12022
+﻿Version=12044
 Setting type=CNC settings
 
 ;----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -6,14 +6,14 @@ Setting type=CNC settings
 ;Die "Steuerungselektronik" Liste der Grundeinstellungen setzt alles auf Standardwerte zurück. Klicke Sie nach manuellen Änderungen nicht mehr an!
 ;----------------------------------------------------------------------------------------------------------------------------------------------------
 
-Enabled=yes
+Enabled=no
 Hardware=G_PWM
 Firmware=G_PWM
-Port=COM5
+Port=COM10
 
 ;Basic configuration
-Steps rev X=3200
-Steps rev Y=3200
+Steps rev X=1600
+Steps rev Y=1600
 Steps rev Z=1600
 Distance rev X=20
 Distance rev Y=20
@@ -21,17 +21,17 @@ Distance rev Z=3
 Fmax X=50
 Fmax Y=50
 Fmax Z=25
-Inertia X=80
-Inertia Y=80
+Inertia X=85
+Inertia Y=85
 Inertia Z=85
-Inverted X=no
+Inverted X=yes
 Inverted Y=no
 Inverted Z=no
 Current X=0,5
 Current Y=0,5
 Current Z=0,5
-Acceleration distance=3
-Fmin=0,91666668653488159
+Acceleration distance=2
+Fmin=1
 Fast diagonal=no
 Step length=N_DEF
 Step pause=2
@@ -75,7 +75,7 @@ Enable Low3=-1
 ;Spindle
 Spindle on off control=yes
 Spindle RPM control=no
-Spindle delay=1
+Spindle delay=0,5
 Spindle RPM min=5000
 Spindle RPM max=25000
 Spindle PWM frequency=0
@@ -84,21 +84,21 @@ Spindle PWM max=90
 Spindle output inverted=no
 
 ;Inputs
-Input 1 name=Pos. X
+Input 1 name=Pos.X
 Input 1 function=Limit
-Input 1 inverted=no
+Input 1 inverted=yes
 
-Input 2 name=Pos. Y
+Input 2 name=Pos.Y
 Input 2 function=Limit
-Input 2 inverted=no
+Input 2 inverted=yes
 
-Input 3 name=Pos. Z
+Input 3 name=Pos.Z
 Input 3 function=Limit
-Input 3 inverted=no
+Input 3 inverted=yes
 
-Input 4 name=NotAus
+Input 4 name=Stop
 Input 4 function=Fault
-Input 4 inverted=no
+Input 4 inverted=yes
 
 Input 5 name=Eingang 5
 Input 5 function=Unused
@@ -108,7 +108,7 @@ Input 6 name=Eingang 6
 Input 6 function=Unused
 Input 6 inverted=no
 
-Input 7 name=Wegsensor
+Input 7 name=Sensor
 Input 7 function=Probe
 Input 7 inverted=no
 
@@ -148,9 +148,82 @@ Input 16 name=Eingang 16
 Input 16 function=Unused
 Input 16 inverted=no
 
+;Sensors
+Sensor Flow enabled=no
+Sensor Flow name=Durchfluss
+Sensor Flow unit=L_Min
+Sensor Flow show min=0
+Sensor Flow show max=10
+Sensor Flow OK min=0,5
+Sensor Flow OK max=1000
+Sensor Flow type=I
+Sensor Flow action=Ignore
+Sensor Flow calibration in=0;1
+Sensor Flow calibration out=0;1
+
+Sensor T_Water enabled=no
+Sensor T_Water name=Wasser
+Sensor T_Water unit=Celsius
+Sensor T_Water show min=10
+Sensor T_Water show max=80
+Sensor T_Water OK min=0
+Sensor T_Water OK max=60
+Sensor T_Water type=R
+Sensor T_Water action=Ignore
+Sensor T_Water calibration in=0;1
+Sensor T_Water calibration out=0;1
+
+Sensor T_Spindle enabled=no
+Sensor T_Spindle name=Spindel
+Sensor T_Spindle unit=Celsius
+Sensor T_Spindle show min=10
+Sensor T_Spindle show max=120
+Sensor T_Spindle OK min=0
+Sensor T_Spindle OK max=100
+Sensor T_Spindle type=R
+Sensor T_Spindle action=Ignore
+Sensor T_Spindle calibration in=0;1
+Sensor T_Spindle calibration out=0;1
+
+Sensor Fill_LVL enabled=no
+Sensor Fill_LVL name=Füllstand
+Sensor Fill_LVL unit=Prozent
+Sensor Fill_LVL show min=0
+Sensor Fill_LVL show max=100
+Sensor Fill_LVL OK min=10
+Sensor Fill_LVL OK max=1000
+Sensor Fill_LVL type=R
+Sensor Fill_LVL action=Ignore
+Sensor Fill_LVL calibration in=0;1
+Sensor Fill_LVL calibration out=0;1
+
+Sensor P_Air enabled=no
+Sensor P_Air name=Druckluft
+Sensor P_Air unit=Bar
+Sensor P_Air show min=0
+Sensor P_Air show max=10
+Sensor P_Air OK min=5
+Sensor P_Air OK max=1000
+Sensor P_Air type=A
+Sensor P_Air action=Ignore
+Sensor P_Air calibration in=0;1
+Sensor P_Air calibration out=0;1
+
+Sensor P_Vac enabled=no
+Sensor P_Vac name=Vakuum
+Sensor P_Vac unit=M_Bar
+Sensor P_Vac show min=0
+Sensor P_Vac show max=1000
+Sensor P_Vac OK min=500
+Sensor P_Vac OK max=1000
+Sensor P_Vac type=A
+Sensor P_Vac action=Ignore
+Sensor P_Vac calibration in=0;1
+Sensor P_Vac calibration out=0;1
+
 ;Outputs
 Output 1 name=Ausgang 1
-Output 1 pic=Vac
+Output 1 pic=None
 Output 1 text=
 Output 1 description=
 Output 1 spindle lock=0
@@ -237,20 +310,164 @@ Output 8 autostart CNC start=no
 Output 8 autostop CNC pause=no
 Output 8 autostop CNC end=no
 
+Output 9 name=Output 9
+Output 9 pic=None
+Output 9 text=
+Output 9 description=
+Output 9 spindle lock=0
+Output 9 CNC lock=no
+Output 9 autostart Estlcam=no
+Output 9 autostart CNC start=no
+Output 9 autostop CNC pause=no
+Output 9 autostop CNC end=no
+
+Output 10 name=Output 10
+Output 10 pic=None
+Output 10 text=
+Output 10 description=
+Output 10 spindle lock=0
+Output 10 CNC lock=no
+Output 10 autostart Estlcam=no
+Output 10 autostart CNC start=no
+Output 10 autostop CNC pause=no
+Output 10 autostop CNC end=no
+
+Output 11 name=Output 11
+Output 11 pic=None
+Output 11 text=
+Output 11 description=
+Output 11 spindle lock=0
+Output 11 CNC lock=no
+Output 11 autostart Estlcam=no
+Output 11 autostart CNC start=no
+Output 11 autostop CNC pause=no
+Output 11 autostop CNC end=no
+
+Output 12 name=Output 12
+Output 12 pic=None
+Output 12 text=
+Output 12 description=
+Output 12 spindle lock=0
+Output 12 CNC lock=no
+Output 12 autostart Estlcam=no
+Output 12 autostart CNC start=no
+Output 12 autostop CNC pause=no
+Output 12 autostop CNC end=no
+
+Output 13 name=Output 13
+Output 13 pic=None
+Output 13 text=
+Output 13 description=
+Output 13 spindle lock=0
+Output 13 CNC lock=no
+Output 13 autostart Estlcam=no
+Output 13 autostart CNC start=no
+Output 13 autostop CNC pause=no
+Output 13 autostop CNC end=no
+
+Output 14 name=Output 14
+Output 14 pic=None
+Output 14 text=
+Output 14 description=
+Output 14 spindle lock=0
+Output 14 CNC lock=no
+Output 14 autostart Estlcam=no
+Output 14 autostart CNC start=no
+Output 14 autostop CNC pause=no
+Output 14 autostop CNC end=no
+
+Output 15 name=Output 15
+Output 15 pic=None
+Output 15 text=
+Output 15 description=
+Output 15 spindle lock=0
+Output 15 CNC lock=no
+Output 15 autostart Estlcam=no
+Output 15 autostart CNC start=no
+Output 15 autostop CNC pause=no
+Output 15 autostop CNC end=no
+
+Output 16 name=Output 16
+Output 16 pic=None
+Output 16 text=
+Output 16 description=
+Output 16 spindle lock=0
+Output 16 CNC lock=no
+Output 16 autostart Estlcam=no
+Output 16 autostart CNC start=no
+Output 16 autostop CNC pause=no
+Output 16 autostop CNC end=no
+
+;MMS
+MMS 1 name=Sprühprogramm 1
+MMS 1 pic=None
+MMS 1 text=
+MMS 1 spray frequency=2
+MMS 1 spray duration=10
+MMS 1 air output=-1
+MMS 1 aux output=-1
+MMS 1 blow output=-1
+MMS 1 blow interval=0
+MMS 1 blow duration=0
+
+MMS 2 name=Sprühprogramm 2
+MMS 2 pic=None
+MMS 2 text=
+MMS 2 spray frequency=2
+MMS 2 spray duration=10
+MMS 2 air output=-1
+MMS 2 aux output=-1
+MMS 2 blow output=-1
+MMS 2 blow interval=0
+MMS 2 blow duration=0
+
+MMS 3 name=Sprühprogramm 3
+MMS 3 pic=None
+MMS 3 text=
+MMS 3 spray frequency=2
+MMS 3 spray duration=10
+MMS 3 air output=-1
+MMS 3 aux output=-1
+MMS 3 blow output=-1
+MMS 3 blow interval=0
+MMS 3 blow duration=0
+
+MMS 4 name=Sprühprogramm 4
+MMS 4 pic=None
+MMS 4 text=
+MMS 4 spray frequency=2
+MMS 4 spray duration=10
+MMS 4 air output=-1
+MMS 4 aux output=-1
+MMS 4 blow output=-1
+MMS 4 blow interval=0
+MMS 4 blow duration=0
+
+MMS 5 name=Sprühprogramm 5
+MMS 5 pic=None
+MMS 5 text=
+MMS 5 spray frequency=2
+MMS 5 spray duration=10
+MMS 5 air output=-1
+MMS 5 aux output=-1
+MMS 5 blow output=-1
+MMS 5 blow interval=0
+MMS 5 blow duration=0
+
 ;Homing
 Home auto=no
-Home dir X=0
-Home dir Y=0
+Home dir X=1
+Home dir Y=1
 Home dir Z=1
-Home F1=20
-Home F2=3
+Home F1=33,333333333333336
+Home F2=1,6666666666666667
 Home back off=5
 Home switch precise=yes
 
 ;Travel limit
 Travel limit enabled=no
 Travel limit X=465
-Travel limit Y=950
+Travel limit Y=945
 Travel limit Z=70
 Park after homing=no
 Park after controller start=no
@@ -272,7 +489,7 @@ Tool change position Z=N_DEF
 
 ;Tool length sensor
 TLS F=0,10000000000000001
-TLS back off=1
+TLS back off=5
 TLS use height=yes
 TLS height=1,04
 TLS goto pos=no
@@ -294,9 +511,16 @@ Touch enabled=no
 Keyboard enabled=yes
 Feed level 0=2
 Feed level 1=10
-Feed level 2=25
+Feed level 2=20
 Feed level 3=50
 Feed level 4=100
+Mouse wheel 0=0,02
+Mouse wheel 1=0,050000000000000003
+Mouse wheel 2=0,050000000000000003
+Mouse wheel 3=0,25
+Mouse wheel 4=0,25
+Speed level latching=yes
+Mouse wheel both directions=yes
 Key D_N 1=NumPad8
 Key D_N 2=None
 Key D_NE 1=NumPad9
@@ -313,9 +537,9 @@ Key D_W 1=NumPad4
 Key D_W 2=None
 Key D_NW 1=NumPad7
 Key D_NW 2=None
-Key D_UP 1=PageUp
+Key D_UP 1=Add
 Key D_UP 2=None
-Key D_DN 1=Next
+Key D_DN 1=Return
 Key D_DN 2=None
 Key F_UP 1=Up
 Key F_UP 2=None
@@ -325,19 +549,27 @@ Key S_UP 1=Right
 Key S_UP 2=None
 Key S_DN 1=Left
 Key S_DN 2=None
-Key KB_EN 1=F2
+Key KB_EN 1=NumLock
 Key KB_EN 2=None
-Key CMD_EN 1=None
-Key CMD_EN 2=None
-Key SS 1=Space
+Key WLS 1=Decimal
+Key WLS 2=NumPad1
+Key CNC_Start 1=NumPad5
+Key CNC_Start 2=None
+Key Spindle_Start 1=Decimal
+Key Spindle_Start 2=NumPad4
+Key OK 1=Decimal
+Key OK 2=NumPad0
+Key SS 1=NumPad0
 Key SS 2=None
-Key S2 1=D2
+Key S1 1=Divide
+Key S1 2=None
+Key S2 1=None
 Key S2 2=None
-Key S3 1=D3
+Key S3 1=Multiply
 Key S3 2=None
-Key S4 1=D4
+Key S4 1=None
 Key S4 2=None
-Key S5 1=D5
+Key S5 1=Subtract
 Key S5 2=None
 Key M1 1=None
 Key M1 2=None
@@ -355,10 +587,10 @@ Key M7 1=None
 Key M7 2=None
 Key M8 1=None
 Key M8 2=None
+Key M9 1=None
+Key M9 2=None
 Key M10 1=None
 Key M10 2=None
-Key M11 1=None
-Key M11 2=None
 Key O1 1=None
 Key O1 2=None
 Key O2 1=None
@@ -375,6 +607,22 @@ Key O7 1=None
 Key O7 2=None
 Key O8 1=None
 Key O8 2=None
+Key O9 1=None
+Key O9 2=None
+Key O10 1=None
+Key O10 2=None
+Key O11 1=None
+Key O11 2=None
+Key O12 1=None
+Key O12 2=None
+Key O13 1=None
+Key O13 2=None
+Key O14 1=None
+Key O14 2=None
+Key O15 1=None
+Key O15 2=None
+Key O16 1=None
+Key O16 2=None
 Key OVR 1=F11
 Key OVR 2=None
 
@@ -383,6 +631,7 @@ GP enabled=no
 GP F1=2
 GP F2=100
 GP exponent=60
+GP backlash=25
 GP sensitivity=2
 GP single axis=no
 
@@ -425,27 +674,49 @@ Webcam tool offset Z=0
 Webcam aligned to preview=no
 
 ;Macros
-Macro 1 name=
-Macro 1 picture=None
-Macro 1 text=
-Macro 1 description=
+Macro 1 name=Vorne Parken
+Macro 1 picture=
+Macro 1 text=Vorne
+Macro 1 description=Fährt nach vorne und parkt (alles Null)
 Macro 1 macro=
+[>>>]
+MZ69
+
+MX10 MY150
+
+Null
+
+[<<<]
 Macro 1 release=
 Macro 1 repeat=
 
-Macro 2 name=
-Macro 2 picture=None
-Macro 2 text=
-Macro 2 description=
+Macro 2 name=Mitte parken
+Macro 2 picture=
+Macro 2 text=Mitte
+Macro 2 description=Fährt in die Mitte und parkt (alles Null)
 Macro 2 macro=
+[>>>]
+MZ69
+
+MX225 M475
+
+Null
+
+[<<<]
 Macro 2 release=
 Macro 2 repeat=
 
-Macro 3 name=
-Macro 3 picture=None
-Macro 3 text=
-Macro 3 description=
+Macro 3 name=Werkzeugwechsel
+Macro 3 picture=Toolchange
+Macro 3 text=Wechsel
+Macro 3 description=Fährt Position für Werkzeugwechsel an
 Macro 3 macro=
+[>>>]
+MZ69
+
+MX10 MY150
+
+[<<<]
 Macro 3 release=
 Macro 3 repeat=
 
@@ -511,14 +782,14 @@ Show tool length button=yes
 Show surface scan button=yes
 Show homing button=yes
 Show stop button=yes
-Back off distance=1
+Back off distance=5
 Surface scan feed=2
 Beep=yes
 
 ;Bootloader
-Bootloader baudrate=57600
+Bootloader baudrate=115200
 Bootloader reset time=20
 Bootloader wait time=500
 
 Preset info=
-EOL=1CF82B12A04B6EC5
+EOL=F4AFFB415212A089
