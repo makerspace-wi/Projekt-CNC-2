@@ -26,7 +26,7 @@ Fräsfläche:
 Gesteuert wird die Fräse mit dem Programm [Estlcam](https://www.estlcam.de/) von Christian Knüll (Homepage enthält auch weitere Hilfen)
 
 ### Einweisungen
-Die CNC1-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die Bedienung ist sehr komplex und sollte unbedingt anhand eines konkreten Projektes erlernt werden.
+Die CNC2-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die Bedienung ist sehr komplex und sollte unbedingt anhand eines konkreten Projektes erlernt werden.
 
 #### Voraussetzung für eine Einweisung:
 
