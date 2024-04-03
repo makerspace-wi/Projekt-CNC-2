@@ -16,7 +16,7 @@ und der Weiterentwicklung nach CNC14 (cnc14.de).
 Arbeitsfläche:
 * X-Achse 600mm
 * Y-Achse 1200mm
-* Z-Achse ??mm (Durchlasshöhe ohne Fräser)
+* Z-Achse 79mm (+22mm ohne Lochrasterplatten [Befestigung??])
 
 Fräsfläche:
 * X-Achse 500mm
