@@ -40,8 +40,7 @@ Die CNC2-Fräse kann nur nach Einweisung und Freischaltung benutzt werden. Die B
 - Kontrolle und ggf. Überarbeitung der CAM Programmierung gemeinsam mit einem Einweiser
 - Erklärung der technischen Details und genaue Funktionsweise der Fräse
 - Einrichten und fräsen des eigenen Projektes mit Unterstützung des Einweisers
-- *Freischaltung nach 2. eigenständigem Projekt ???*
+- *Freischaltung nach 2. eigenständigem Projekt !*
 
-### Erklärungen werden neben dem Mauszeiger angezeigt!!!<br>
 ### Details zur Bedienung, Einrichtung & Wartung können im Wiki nachgeschlagen werden.<br> !!! Bei Unsicherheiten in der Bedienung BITTE IMMER einen Einweiser kontaktieren !!!
 ### [Zum Wiki](https://github.com/makerspace-wi/Projekt-CNC2-Holzfraese/wiki)
